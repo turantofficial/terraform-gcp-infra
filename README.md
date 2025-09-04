@@ -1,22 +1,27 @@
-terraform-gcp-infra/
-├── main.tf
-├── variables.tf
-├── outputs.tf
-├── backend.tf
-├── instance.tf
-├── modules/
-│   ├── instances/
-│   │   ├── instances.tf
-│   │   ├── variables.tf
-│   │   └── outputs.tf
-│   └── storage/
-│       ├── storage.tf
-│       ├── variables.tf
-│       └── outputs.tf
-├── modules/gcs-static-website-bucket/
-│   ├── website.tf
-│   ├── variables.tf
-│   ├── outputs.tf
-│   ├── README.md
-│   └── LICENSE
-└── README.md
+# Terraform GCP Infrastructure
+
+This repo demonstrates Infrastructure as Code (IaC) on Google Cloud using Terraform.
+
+## Features
+- VPC & Firewall
+- Compute Engine VMs
+- GCS Buckets (with static website module)
+- Remote state with GCS
+- Module usage (instances, storage)
+
+## Usage
+terraform init
+terraform plan
+terraform apply
+
+shell
+Code kopieren
+
+## Cleanup
+terraform destroy
+
+yaml
+Code kopieren
+
+---
+Author: [Turan Tosun](https://www.gowithturan.com)
