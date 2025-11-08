@@ -1,5 +1,5 @@
 resource "google_compute_instance" "terraform" {
-  project      = "qwiklabs-gcp-03-4d79e4b28238"
+  project      = "ProjectA"
   name         = "terraform"
   machine_type = "e2-medium"
   zone         = "us-west1-c"
@@ -17,7 +17,4 @@ resource "google_compute_instance" "terraform" {
   }
 }
 
-#terraform init
-#terraform plan
-#terraform apply
-#terraform show
+
