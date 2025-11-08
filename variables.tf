@@ -1,7 +1,7 @@
 variable "project_id" {
   description = "GCP project ID"
   type        = string
-  default     = "your-project-id"
+  default     = "turans-gcs-bucket"
 }
 
 variable "region" {
@@ -17,7 +17,7 @@ variable "zone" {
 }
 
 variable "name" {
-  description = "Unique bucket name"
+  description = "turans-gcs-bucket"
   type        = string
   default     = "gowithturan-terraform-bucket"
 }
