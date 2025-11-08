@@ -1,5 +1,5 @@
-output "bucket_name" {
-  description = "Name of the created GCS bucket"
+output "turans-gcs-bucket" {
+  description = "Turans GCS Bucket"
   value       = module.gcs-static-website-bucket.bucket.name
 }
 
